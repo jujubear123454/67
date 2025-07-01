@@ -26,7 +26,7 @@ public class randomNum{
                 game=false;
             }
             else{
-                System.out.println("You have "+(10-guess)+" guesses left.");
+                System.out.println("You have "+(10-count)+" guesses left.");
             }
         }
     }
