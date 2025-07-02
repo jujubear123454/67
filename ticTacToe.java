@@ -43,7 +43,37 @@ public class ticTacToe{
                 else if(board[2][0]==turn && board[2][1]==turn && board[2][2]==turn){
                     System.out.println("Player "+ turn +" has won!");
                     game=false;
-                } 
+                }
+                
+                
+
+                else if(board[0][0]==turn && board[1][0]==turn && board[2][0]==turn){
+                    System.out.println("Player "+ turn +" has won!");
+                    game=false;
+                }
+                else if(board[0][1]==turn && board[1][1]==turn && board[2][1]==turn){
+                    System.out.println("Player "+ turn +" has won!");
+                    game=false;
+                }
+                else if(board[0][2]==turn && board[1][2]==turn && board[2][2]==turn){
+                    System.out.println("Player "+ turn +" has won!");
+                    game=false;
+                }
+                
+                
+                else if(board[0][0]==turn && board[1][1]==turn && board[2][2]==turn){
+                    System.out.println("Player "+ turn +" has won!");
+                    game=false;
+                }
+                else if(board[0][2]==turn && board[1][1]==turn && board[2][0]==turn){
+                    System.out.println("Player "+ turn +" has won!");
+                    game=false;
+                }
+
+                else if(count==9){
+                    System.out.println("You have tied!");
+                    game=false;
+                }
                 if(turn=='X'){
                     turn='O';
                 }
@@ -53,5 +83,11 @@ public class ticTacToe{
             }
             
         }
+        for(int a=0; a<=2; a++){
+                for(int w=0; w<=2; w++){
+                    System.out.print(board[a][w]+" ");
+                }
+                System.out.println("");
+            }
     }
 }
